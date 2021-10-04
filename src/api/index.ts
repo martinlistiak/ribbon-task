@@ -1,3 +1,3 @@
-import * as Auth from './auth'
+import * as ExchangeRates from './exchange-rates'
 
-export { Auth }
+export { ExchangeRates }
