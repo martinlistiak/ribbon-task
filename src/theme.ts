@@ -2,10 +2,8 @@ import 'styled-components'
 
 export const theme = {
 	colors: {
-		primary: '#fa824c',
-		secondary: '#342e37',
-		panel: '#fafffd',
-		error: 'hsl(11, 92%, 57%)',
+		primary: '#8a45ff',
+		background: '#ffffff',
 	},
 }
 
