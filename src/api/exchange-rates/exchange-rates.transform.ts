@@ -18,7 +18,7 @@ export function transformDateLine(dateLine: string): Date {
 }
 
 export function transformExchangeRates(exchangeratesText: string): ExchangeRatesResponse {
-	const [dateLine, _, ...ratesLines] = exchangeratesText.split('\n')
+	const [dateLine, _, ...ratesLines] = exchangeratesText.split('\n').filter(line => line.length > 0)
 	const date = transformDateLine(dateLine)
 
 	const exchangeRates = ratesLines.map(rateLine => {
@@ -29,7 +29,7 @@ export function transformExchangeRates(exchangeratesText: string): ExchangeRates
 			currency,
 			baseAmount: Number(baseAmount),
 			code,
-			rate: Number(rate),
+			rate: parseFloat(rate.replace(',', '.')),
 		}
 	})
 
