@@ -7,6 +7,6 @@ describe('Exchange rates transformations', () => {
 
 		expect(date).toEqual(new Date('10/4/2021'))
 		expect(exchangeRates).toHaveLength(8)
-		expect(exchangeRates[0]).toHaveProperty('code')
+		expect(exchangeRates![0]).toHaveProperty('code')
 	})
 })
