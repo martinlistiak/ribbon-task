@@ -24,4 +24,5 @@ export const InputGroup = styled.div`
 
 export const CalculatedResult = styled.div`
 	padding: 12px;
+	font-size: 24px;
 `

@@ -19,6 +19,10 @@ export function ExchangeRatesTable() {
 		)
 	}
 
+	if (error) {
+		return <ExchangeRatesTableBlock>Unable to load</ExchangeRatesTableBlock>
+	}
+
 	return (
 		<ExchangeRatesTableBlock>
 			<Table

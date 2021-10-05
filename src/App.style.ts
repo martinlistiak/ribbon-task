@@ -13,10 +13,12 @@ export const StyledApp = styled.div`
 
 export const Holder = styled.div`
 	width: 800px;
+	padding: 24px 0;
 `
 
 export const Content = styled(Card)`
 	width: 100%;
+	margin-bottom: 8px;
 
 	.ant-card-body {
 		height: 100%;

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider } from 'styled-components'
-import { useQuery, useMutation, useQueryClient, QueryClient, QueryClientProvider } from 'react-query'
+import { QueryClient, QueryClientProvider } from 'react-query'
 import { GlobalStyles } from './index.style'
 import { App } from './App'
 import { theme } from './theme'
